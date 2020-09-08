@@ -33,7 +33,12 @@ The script results in similarity value and processing time for a single pair of 
  Run command:  
   python ImageDiffer_Unittest.py 
 
-  Four test cases are expected to run and show results. 
+  Four test cases are expected to run and show results.  
+  Note: Three images associated with the script must not be deleted to run the test.
+  
+# Log File:
+  The script generates error detailed logs for images it cannot process and stores in "app.log" file in the same directory of the script.    
+  Each line of the log file states the row number from the input file, it failes to process.  
 
 
 
