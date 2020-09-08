@@ -19,7 +19,7 @@ The script results in similarity value and processing time for a single pair of 
  The script requires user to provide Input file, containing list of pair of images, and Output file in CSV format.   
  The header of the Input.csv must be only 'Image_1' and 'Image_2'.  
  Each row of the Input file must contain two images with valid extensions.   
- Valid Image files must have one of these extensions: JPEG, JPG, PNG, BMP, GIF, TIFF.
+ Valid Image files must have one of these extensions: JPEG, JPG, PNG, BMP, GIF, TIFF.  
  Output file should contain:  
  Image1 Image2  Similarity  Elapsed
 
