@@ -21,7 +21,7 @@ The script results in similarity value and processing time for a single pair of 
  Each row of the Input file must contain two images with valid extensions.   
  Valid Image files must have one of these extensions: JPEG, JPG, PNG, BMP, GIF, TIFF.  
  Output file should contain:  
- Image1 Image2  Similarity  Elapsed
+ IMAGE1 IMAGE2  SIMILARITY  ELAPSED
 
 # Enviornment:
   # Linux: 
@@ -43,6 +43,8 @@ The script results in similarity value and processing time for a single pair of 
   The script generates error detailed logs for images it cannot process and stores in "app.log" file in the same directory of the script.    
   Each line of the log file states the row number from the input file, it failes to process.  
 
-
+# Note:
+  The process is optimized with caching description of a single image as there is a possibility of same image will be encountered multiple times. This could effectively 
+  reduce time elapsed for calculating similraties of that pair. Also, multiple pair of iamges can be processed parallelly by introducing multiple threads. However, this would   definitely provide not correct processing time for a pair.  
 
 
